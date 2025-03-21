@@ -2,7 +2,7 @@ package com.example;
 
 import java.util.Scanner;
 
-public class Calculadora {
+public class Calculadora{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,23 +11,23 @@ public class Calculadora {
         int b = 5;
         int resultado = 0;
 
-        System.out.println("Ingrese un operador matemático:");
+        System.out.println("Ingrese un operador matemático: + - * / ");
         String operadorMat = scanner.nextLine();
 
         switch (operadorMat) {
-            case "Suma":
+            case "+":
                 resultado = a + b;
                 System.out.println(" El resultado de la suma es: " + resultado);
                 break;
-            case "Resta":
+            case "-":
                 resultado = a - b;
                 System.out.println(" El resultado de la resta es: " + resultado);
                 break;
-            case "Multiplicación":
+            case "*":
                 resultado = a * b;
                 System.out.println("El resultado de la multiplicación es: " + resultado);
                 break;
-            case "División":
+            case "/":
                 resultado = a / b;
                 System.out.println(" El resultado de la división es: " + resultado);
                 break;
